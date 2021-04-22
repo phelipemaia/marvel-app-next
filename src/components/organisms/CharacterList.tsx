@@ -73,7 +73,7 @@ export default function CharacterList({ characters }) {
         }
     };
 
-    const charactersElement = characters.map(character => <CharacterElement key={character.id} onSelect={(evt) => onSelect(evt, character)} name={character.name} id={character.id} />)    
+    const charactersElement = characters.map(character => <CharacterElement key={character.id} name={character.name} id={character.id} />)    
 
     return (
         <>
@@ -83,6 +83,7 @@ export default function CharacterList({ characters }) {
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
+                        <th>Link</th>
                     </tr>
                 </thead>
                 <tbody>
